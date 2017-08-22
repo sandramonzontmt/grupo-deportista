@@ -3,6 +3,15 @@ eventos:
     type:     annotation
     prefix:   /
 
+eventos: path: /eventos/{page} 
+    defaults: { _controller: EventosBundle:Eventos:index, page: 1 } 
+    requirements: 
+    page: \d+ 
+
+eventos_show: 
+    path: /eventos/{slug}
+    defaults: { _controller: EventosBundle:Eventos:show }
+
 curso:
     resource: "@CursoBundle/Controller/"
     type:     annotation
