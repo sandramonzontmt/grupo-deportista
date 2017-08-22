@@ -193,7 +193,7 @@ class ComposerStaticInitb10587da82cf89113329fabb330eea49
         ),
         'EventosBundle\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/src/EventoBundle',
+            0 => __DIR__ . '/../..' . '/src/EventosBundle',
         ),
         'Doctrine\\Instantiator\\' => 
         array (

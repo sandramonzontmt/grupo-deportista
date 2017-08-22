@@ -10,7 +10,7 @@
         "psr-4": {
             "AppBundle\\": "src/AppBundle",
             "CursoBundle\\": "src/CursoBundle",
-            "EventosBundle\\": "src/EventoBundle"
+            "EventosBundle\\": "src/EventosBundle"
         },
         "classmap": [ "app/AppKernel.php", "app/AppCache.php" ]
     },

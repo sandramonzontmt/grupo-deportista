@@ -18,6 +18,7 @@
       <parameter key="SensioFrameworkExtraBundle">Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle</parameter>
       <parameter key="AppBundle">AppBundle\AppBundle</parameter>
       <parameter key="CursoBundle">CursoBundle\CursoBundle</parameter>
+      <parameter key="EventosBundle">EventosBundle\EventosBundle</parameter>
       <parameter key="DebugBundle">Symfony\Bundle\DebugBundle\DebugBundle</parameter>
       <parameter key="WebProfilerBundle">Symfony\Bundle\WebProfilerBundle\WebProfilerBundle</parameter>
       <parameter key="SensioDistributionBundle">Sensio\Bundle\DistributionBundle\SensioDistributionBundle</parameter>
@@ -69,6 +70,11 @@
         <parameter key="parent">null</parameter>
         <parameter key="path">C:\Users\sandr\Documents\TMTFactory\grupo-deportista\src\CursoBundle</parameter>
         <parameter key="namespace">CursoBundle</parameter>
+      </parameter>
+      <parameter key="EventosBundle" type="collection">
+        <parameter key="parent">null</parameter>
+        <parameter key="path">C:\Users\sandr\Documents\TMTFactory\grupo-deportista\src\EventosBundle</parameter>
+        <parameter key="namespace">EventosBundle</parameter>
       </parameter>
       <parameter key="DebugBundle" type="collection">
         <parameter key="parent">null</parameter>
@@ -607,7 +613,7 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
-      <argument>7HmDRYE4Nu+3XXcSFxKQZa</argument>
+      <argument>xMtorz2y-WoUFRIPLqY893</argument>
       <argument>C:\Users\sandr\Documents\TMTFactory\grupo-deportista\var\cache\dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -617,7 +623,7 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
-      <argument>7HmDRYE4Nu+3XXcSFxKQZa</argument>
+      <argument>xMtorz2y-WoUFRIPLqY893</argument>
       <call method="setLogger">
         <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       </call>
@@ -2167,12 +2173,12 @@
     </service>
     <service id="security.authentication.listener.anonymous.main" class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
       <argument type="service" id="security.token_storage"/>
-      <argument>599c09569d61e1.25365980</argument>
+      <argument>599c1068e89022.65585775</argument>
       <argument type="service" id="monolog.logger.security" on-invalid="null"/>
       <argument type="service" id="security.authentication.manager"/>
     </service>
     <service id="security.authentication.provider.anonymous.main" class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-      <argument>599c09569d61e1.25365980</argument>
+      <argument>599c1068e89022.65585775</argument>
     </service>
     <service id="security.exception_listener.main" class="Symfony\Component\Security\Http\Firewall\ExceptionListener" public="false">
       <argument type="service" id="security.token_storage"/>
@@ -2354,6 +2360,10 @@
         <argument>Curso</argument>
       </call>
       <call method="addPath">
+        <argument>C:\Users\sandr\Documents\TMTFactory\grupo-deportista\src\EventosBundle/Resources/views</argument>
+        <argument>Eventos</argument>
+      </call>
+      <call method="addPath">
         <argument>C:\Users\sandr\Documents\TMTFactory\grupo-deportista\vendor\symfony\symfony\src\Symfony\Bundle\DebugBundle/Resources/views</argument>
         <argument>Debug</argument>
       </call>
@@ -2498,6 +2508,10 @@
       <call method="addPath">
         <argument>C:\Users\sandr\Documents\TMTFactory\grupo-deportista\src\CursoBundle/Resources/views</argument>
         <argument>Curso</argument>
+      </call>
+      <call method="addPath">
+        <argument>C:\Users\sandr\Documents\TMTFactory\grupo-deportista\src\EventosBundle/Resources/views</argument>
+        <argument>Eventos</argument>
       </call>
       <call method="addPath">
         <argument>C:\Users\sandr\Documents\TMTFactory\grupo-deportista\vendor\symfony\symfony\src\Symfony\Bundle\DebugBundle/Resources/views</argument>
@@ -3365,7 +3379,7 @@
     <service id="cache.system.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false" lazy="true">
       <argument>GwufemAsrc</argument>
       <argument>0</argument>
-      <argument>7HmDRYE4Nu+3XXcSFxKQZa</argument>
+      <argument>xMtorz2y-WoUFRIPLqY893</argument>
       <argument>C:\Users\sandr\Documents\TMTFactory\grupo-deportista\var\cache\dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -3373,7 +3387,7 @@
     <service id="cache.validator.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false" lazy="true">
       <argument>x+31vWPjzI</argument>
       <argument>0</argument>
-      <argument>7HmDRYE4Nu+3XXcSFxKQZa</argument>
+      <argument>xMtorz2y-WoUFRIPLqY893</argument>
       <argument>C:\Users\sandr\Documents\TMTFactory\grupo-deportista\var\cache\dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -3381,7 +3395,7 @@
     <service id="cache.serializer.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false" lazy="true">
       <argument>mDS8O-YSlO</argument>
       <argument>0</argument>
-      <argument>7HmDRYE4Nu+3XXcSFxKQZa</argument>
+      <argument>xMtorz2y-WoUFRIPLqY893</argument>
       <argument>C:\Users\sandr\Documents\TMTFactory\grupo-deportista\var\cache\dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -3389,7 +3403,7 @@
     <service id="cache.annotations.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false" lazy="true">
       <argument>OSAsn5ahKq</argument>
       <argument>0</argument>
-      <argument>7HmDRYE4Nu+3XXcSFxKQZa</argument>
+      <argument>xMtorz2y-WoUFRIPLqY893</argument>
       <argument>C:\Users\sandr\Documents\TMTFactory\grupo-deportista\var\cache\dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
