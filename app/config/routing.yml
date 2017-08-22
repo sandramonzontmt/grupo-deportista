@@ -1,3 +1,8 @@
+eventos:
+    resource: "@EventosBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
 curso:
     resource: "@CursoBundle/Controller/"
     type:     annotation

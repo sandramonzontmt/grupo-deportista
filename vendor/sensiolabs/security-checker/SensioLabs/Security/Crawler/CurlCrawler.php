@@ -12,7 +12,6 @@
 namespace SensioLabs\Security\Crawler;
 
 use Composer\CaBundle\CaBundle;
-use SensioLabs\Security\Exception\HttpException;
 use SensioLabs\Security\Exception\RuntimeException;
 use SensioLabs\Security\SecurityChecker;
 
@@ -84,7 +83,7 @@ class CurlCrawler extends BaseCrawler
         }
 
         if (200 != $statusCode) {
-            throw new HttpException(sprintf('The web service failed for an unknown reason (HTTP %s).', $statusCode), $statusCode);
+            throw new RuntimeException(sprintf('The web service failed for an unknown reason (HTTP %s).', $statusCode));
         }
 
         return array($headers, $body);

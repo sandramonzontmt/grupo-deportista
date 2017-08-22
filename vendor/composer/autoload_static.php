@@ -4,15 +4,15 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitb98a6f96db3c37c18671dc0938cfcb51
+class ComposerStaticInitb10587da82cf89113329fabb330eea49
 {
     public static $files = array (
         '92c8763cd6170fce6fcfe7e26b4e8c10' => __DIR__ . '/..' . '/symfony/phpunit-bridge/bootstrap.php',
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
         '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
-        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '023d27dca8066ef29e6739335ea73bad' => __DIR__ . '/..' . '/symfony/polyfill-php70/bootstrap.php',
         'bd9634f2d41831496de0d3dfe4c94881' => __DIR__ . '/..' . '/symfony/polyfill-php56/bootstrap.php',
+        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '6a47392539ca2329373e0d33e1dba053' => __DIR__ . '/..' . '/symfony/polyfill-intl-icu/bootstrap.php',
         '32dcc8afd4335739640db7d200c1971d' => __DIR__ . '/..' . '/symfony/polyfill-apcu/bootstrap.php',
         'bbdfbbbed607b8d495bfe4c8f07d90b0' => __DIR__ . '/..' . '/symfony/symfony/src/Symfony/Component/VarDumper/Resources/functions/dump.php',
@@ -62,6 +62,10 @@ class ComposerStaticInitb98a6f96db3c37c18671dc0938cfcb51
         'F' => 
         array (
             'Fig\\Link\\' => 9,
+        ),
+        'E' => 
+        array (
+            'EventosBundle\\' => 14,
         ),
         'D' => 
         array (
@@ -187,6 +191,10 @@ class ComposerStaticInitb98a6f96db3c37c18671dc0938cfcb51
         array (
             0 => __DIR__ . '/..' . '/fig/link-util/src',
         ),
+        'EventosBundle\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/EventoBundle',
+        ),
         'Doctrine\\Instantiator\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator',
@@ -284,10 +292,10 @@ class ComposerStaticInitb98a6f96db3c37c18671dc0938cfcb51
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitb98a6f96db3c37c18671dc0938cfcb51::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitb98a6f96db3c37c18671dc0938cfcb51::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInitb98a6f96db3c37c18671dc0938cfcb51::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInitb98a6f96db3c37c18671dc0938cfcb51::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitb10587da82cf89113329fabb330eea49::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitb10587da82cf89113329fabb330eea49::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitb10587da82cf89113329fabb330eea49::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInitb10587da82cf89113329fabb330eea49::$classMap;
 
         }, null, ClassLoader::class);
     }
