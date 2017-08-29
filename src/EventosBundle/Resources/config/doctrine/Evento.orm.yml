@@ -1,0 +1,24 @@
+EventosBundle\Model\Evento:
+
+  type: entity
+  table: eventos
+  id:
+    id:
+      type: integer
+      generator: { strategy:AUTO}
+  fields:
+    name:
+      type: string
+      length: 255
+    description:
+      type: text
+    sport:
+      type: text
+
+/*
+  protected $asssistants;
+  protected $organizator;
+  protected $price;
+  protected $material;
+  protected $date_start;
+  protected $date_end;*/

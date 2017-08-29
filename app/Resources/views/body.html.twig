@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        {% block body %}{% endblock %}
+
+        <h3> Últimos eventos </h3>
+
+        <u1>
+            {% for evento in last_events %}
+            <li> {{evento.name }}</li>
+            {% endfor %}
+        </u1>
+        
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>
