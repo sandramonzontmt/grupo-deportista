@@ -2,7 +2,7 @@ eventos:
     path: /eventos/{page} 
     defaults: { _controller: EventosBundle:Eventos:index, page: 1 } 
     requirements: 
-    page: \d+ 
+        page: \d+ 
 
 eventos_show: 
     path: /eventos/{slug}
