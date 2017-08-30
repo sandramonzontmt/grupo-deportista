@@ -1,4 +1,4 @@
-EventosBundle\Model\Evento:
+EventosBundle\Entity\Evento:
 
   type: entity
   table: eventos
