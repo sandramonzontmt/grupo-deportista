@@ -1,12 +1,8 @@
-eventos:
-    resource: "@EventosBundle/Controller/"
-    type:     annotation
-    prefix:   /
-
-eventos: path: /eventos/{page} 
+eventos: 
+    path: /eventos/{page} 
     defaults: { _controller: EventosBundle:Eventos:index, page: 1 } 
     requirements: 
-    page: \d+ 
+        page: \d+ 
 
 eventos_show: 
     path: /eventos/{slug}
