@@ -120,6 +120,7 @@
     <parameter key="mailer_user">null</parameter>
     <parameter key="mailer_password">null</parameter>
     <parameter key="secret">TMTFactory</parameter>
+    <parameter key="contact_email">sandra.monzon@tmtfactory.com</parameter>
     <parameter key="locale">en</parameter>
     <parameter key="fragment.renderer.hinclude.global_template">null</parameter>
     <parameter key="fragment.path">/_fragment</parameter>
@@ -619,7 +620,7 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
-      <argument>Hd+Yus34mbpAs6YV6PUTE5</argument>
+      <argument>p2977Uos-UyAGnrSTcnQh2</argument>
       <argument>C:\Users\sandr\Documents\TMTFactory\grupo-deportista\var\cache\dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -629,7 +630,7 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
-      <argument>Hd+Yus34mbpAs6YV6PUTE5</argument>
+      <argument>p2977Uos-UyAGnrSTcnQh2</argument>
       <call method="setLogger">
         <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       </call>
@@ -1386,14 +1387,6 @@
       </call>
       <call method="addListener">
         <argument>kernel.request</argument>
-        <argument type="collection">
-          <argument type="service" id="debug.debug_handlers_listener"/>
-          <argument>configure</argument>
-        </argument>
-        <argument>2048</argument>
-      </call>
-      <call method="addListener">
-        <argument>console.command</argument>
         <argument type="collection">
           <argument type="service" id="debug.debug_handlers_listener"/>
           <argument>configure</argument>
@@ -2179,12 +2172,12 @@
     </service>
     <service id="security.authentication.listener.anonymous.main" class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
       <argument type="service" id="security.token_storage"/>
-      <argument>59a69c2759d683.02066391</argument>
+      <argument>59a911a11af977.72334141</argument>
       <argument type="service" id="monolog.logger.security" on-invalid="null"/>
       <argument type="service" id="security.authentication.manager"/>
     </service>
     <service id="security.authentication.provider.anonymous.main" class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-      <argument>59a69c2759d683.02066391</argument>
+      <argument>59a911a11af977.72334141</argument>
     </service>
     <service id="security.exception_listener.main" class="Symfony\Component\Security\Http\Firewall\ExceptionListener" public="false">
       <argument type="service" id="security.token_storage"/>
@@ -2303,6 +2296,10 @@
       </call>
       <call method="addRuntimeLoader">
         <argument type="service" id="twig.runtime_loader"/>
+      </call>
+      <call method="addGlobal">
+        <argument>contact_email</argument>
+        <argument>%contact_email</argument>
       </call>
       <configurator service="twig.configurator.environment" method="configure"/>
     </service>
@@ -3400,7 +3397,7 @@
     <service id="cache.system.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false" lazy="true">
       <argument>GwufemAsrc</argument>
       <argument>0</argument>
-      <argument>Hd+Yus34mbpAs6YV6PUTE5</argument>
+      <argument>p2977Uos-UyAGnrSTcnQh2</argument>
       <argument>C:\Users\sandr\Documents\TMTFactory\grupo-deportista\var\cache\dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -3408,7 +3405,7 @@
     <service id="cache.validator.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false" lazy="true">
       <argument>x+31vWPjzI</argument>
       <argument>0</argument>
-      <argument>Hd+Yus34mbpAs6YV6PUTE5</argument>
+      <argument>p2977Uos-UyAGnrSTcnQh2</argument>
       <argument>C:\Users\sandr\Documents\TMTFactory\grupo-deportista\var\cache\dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -3416,7 +3413,7 @@
     <service id="cache.serializer.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false" lazy="true">
       <argument>mDS8O-YSlO</argument>
       <argument>0</argument>
-      <argument>Hd+Yus34mbpAs6YV6PUTE5</argument>
+      <argument>p2977Uos-UyAGnrSTcnQh2</argument>
       <argument>C:\Users\sandr\Documents\TMTFactory\grupo-deportista\var\cache\dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -3424,7 +3421,7 @@
     <service id="cache.annotations.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false" lazy="true">
       <argument>OSAsn5ahKq</argument>
       <argument>0</argument>
-      <argument>Hd+Yus34mbpAs6YV6PUTE5</argument>
+      <argument>p2977Uos-UyAGnrSTcnQh2</argument>
       <argument>C:\Users\sandr\Documents\TMTFactory\grupo-deportista\var\cache\dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
