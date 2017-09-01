@@ -10,3 +10,5 @@ parameters:
     mailer_user: null
     mailer_password: null
     secret: TMTFactory
+
+    contact_email: sandra.monzon@tmtfactory.com  # Gobal variable used in footer (TEMA 5)
