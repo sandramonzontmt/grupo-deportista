@@ -113,8 +113,8 @@
     <parameter key="database_host">localhost</parameter>
     <parameter key="database_port">null</parameter>
     <parameter key="database_name">grupo-deportista-db</parameter>
-    <parameter key="database_user">admin</parameter>
-    <parameter key="database_password">admin</parameter>
+    <parameter key="database_user">root</parameter>
+    <parameter key="database_password">null</parameter>
     <parameter key="mailer_transport">smtp</parameter>
     <parameter key="mailer_host">127.0.0.1</parameter>
     <parameter key="mailer_user">null</parameter>
@@ -620,7 +620,7 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
-      <argument>A3yr4dWBFNFlBgh63onA9U</argument>
+      <argument>TnBwSiPdTnhY-wSyiG9Jyn</argument>
       <argument>C:\Users\sandr\Documents\TMTFactory\grupo-deportista\var\cache\dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -630,7 +630,7 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
-      <argument>A3yr4dWBFNFlBgh63onA9U</argument>
+      <argument>TnBwSiPdTnhY-wSyiG9Jyn</argument>
       <call method="setLogger">
         <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       </call>
@@ -2180,12 +2180,12 @@
     </service>
     <service id="security.authentication.listener.anonymous.main" class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
       <argument type="service" id="security.token_storage"/>
-      <argument>59bbb0bb82fc22.45555043</argument>
+      <argument>59bbc02b96ede1.71867542</argument>
       <argument type="service" id="monolog.logger.security" on-invalid="null"/>
       <argument type="service" id="security.authentication.manager"/>
     </service>
     <service id="security.authentication.provider.anonymous.main" class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-      <argument>59bbb0bb82fc22.45555043</argument>
+      <argument>59bbc02b96ede1.71867542</argument>
     </service>
     <service id="security.exception_listener.main" class="Symfony\Component\Security\Http\Firewall\ExceptionListener" public="false">
       <argument type="service" id="security.token_storage"/>
@@ -2803,8 +2803,8 @@
         <argument key="host">localhost</argument>
         <argument key="port">null</argument>
         <argument key="dbname">grupo-deportista-db</argument>
-        <argument key="user">admin</argument>
-        <argument key="password">admin</argument>
+        <argument key="user">root</argument>
+        <argument key="password">null</argument>
         <argument key="charset">UTF8</argument>
         <argument key="driverOptions" type="collection"/>
         <argument key="defaultTableOptions" type="collection"/>
@@ -3405,7 +3405,7 @@
     <service id="cache.system.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false" lazy="true">
       <argument>GwufemAsrc</argument>
       <argument>0</argument>
-      <argument>A3yr4dWBFNFlBgh63onA9U</argument>
+      <argument>TnBwSiPdTnhY-wSyiG9Jyn</argument>
       <argument>C:\Users\sandr\Documents\TMTFactory\grupo-deportista\var\cache\dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -3413,7 +3413,7 @@
     <service id="cache.validator.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false" lazy="true">
       <argument>x+31vWPjzI</argument>
       <argument>0</argument>
-      <argument>A3yr4dWBFNFlBgh63onA9U</argument>
+      <argument>TnBwSiPdTnhY-wSyiG9Jyn</argument>
       <argument>C:\Users\sandr\Documents\TMTFactory\grupo-deportista\var\cache\dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -3421,7 +3421,7 @@
     <service id="cache.serializer.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false" lazy="true">
       <argument>mDS8O-YSlO</argument>
       <argument>0</argument>
-      <argument>A3yr4dWBFNFlBgh63onA9U</argument>
+      <argument>TnBwSiPdTnhY-wSyiG9Jyn</argument>
       <argument>C:\Users\sandr\Documents\TMTFactory\grupo-deportista\var\cache\dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -3429,7 +3429,7 @@
     <service id="cache.annotations.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false" lazy="true">
       <argument>OSAsn5ahKq</argument>
       <argument>0</argument>
-      <argument>A3yr4dWBFNFlBgh63onA9U</argument>
+      <argument>TnBwSiPdTnhY-wSyiG9Jyn</argument>
       <argument>C:\Users\sandr\Documents\TMTFactory\grupo-deportista\var\cache\dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
