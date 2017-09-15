@@ -1,6 +1,6 @@
 <?php
 
-namespace EventosBundle\Entity\Evento;
+namespace EventosBundle\Entity;
 
 class Evento
 {
