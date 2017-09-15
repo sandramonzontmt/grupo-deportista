@@ -15,10 +15,10 @@ EventosBundle\Entity\Evento:
     sport:
       type: text
 
-/*
-  protected $asssistants;
-  protected $organizator;
-  protected $price;
-  protected $material;
-  protected $date_start;
-  protected $date_end;*/
+
+ # protected $asssistants;
+ # protected $organizator;
+ # protected $price;
+ # protected $material;
+ # protected $date_start;
+ # protected $date_end;
