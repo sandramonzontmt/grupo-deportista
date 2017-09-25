@@ -2,6 +2,12 @@ EventosBundle\Entity\Evento:
 
   type: entity
   table: eventos
+  manyToOne:  
+    organizator:
+      targetEntity: Person
+      joinColumn:
+        name: organizator_id
+        referencedColumnName: id
   id:
     id:
       type: integer
@@ -16,6 +22,9 @@ EventosBundle\Entity\Evento:
       type: text
     sport:
       type: text
+    organizator:
+      type: text
+      length: 255
 
 
  # protected $asssistants;
