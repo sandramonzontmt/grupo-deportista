@@ -1,0 +1,19 @@
+EventosBundle\Entity\Person:
+    type: entity
+    table: null
+    repositoryClass: EventosBundle\Repository\PersonRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 255
+        dni:
+            type: string
+            length: 255
+            unique: true
+    lifecycleCallbacks: {  }
