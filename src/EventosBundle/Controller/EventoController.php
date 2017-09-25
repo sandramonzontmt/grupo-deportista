@@ -7,7 +7,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 
 
-class EventosController extends Controller { 
+class EventoController extends Controller { 
 
   public function showAction($id)
   {
